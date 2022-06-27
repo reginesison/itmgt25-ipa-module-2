@@ -42,10 +42,12 @@ def savings(gross_pay, tax_rate, expenses):
     applied_tax = math.floor(gross_pay*(1-tax_rate))
     take_home_pay = applied_tax - expenses
     
-    print(take_home_pay)
+    # print(take_home_pay)
+
+    return take_home_pay
 
     
-savings(60000, 0.2, 18000)
+# savings(60000, 0.2, 18000)
     
 def material_waste(total_material, material_units, num_jobs, job_consumption):
     '''Material Waste.
@@ -90,9 +92,11 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     product_jobs_mat = num_jobs * job_consumption
     diff_con_av = total_material - product_jobs_mat
     
-    print(str(diff_con_av) + material_units)
+    # print(str(diff_con_av) + material_units)
+
+    return str(diff_con_av) + material_units
     
-material_waste(100, "kg", 45, 2)
+# material_waste(100, "kg", 45, 2)
 
 def interest(principal, rate, periods):
     '''Interest.
@@ -130,9 +134,11 @@ def interest(principal, rate, periods):
     simple_int = principal * (rate * periods)
     final_val = simple_int + principal
     
-    print(math.floor(final_val))
+    # print(math.floor(final_val))
+
+    return math.floor(final_val)
     
-interest(100, 0.02, 12)
+# interest(100, 0.02, 12)
 
 def body_mass_index(weight, height):
     '''Body Mass Index.
@@ -171,7 +177,9 @@ def body_mass_index(weight, height):
     
     BMI = (weight*0.453592) / (height_m**2)
     
-    print(BMI)
+    # print(BMI)
 
-body_mass_index(130, [5,4])
+    return BMI
+
+# body_mass_index(130, [5,4])
     
